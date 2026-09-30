@@ -1,27 +1,5 @@
-# Labo 1 - Je werkplek en je eerste pagina's
-Naam: Nouredine Tahrioui
-
-## Oefening 4: Tags opzoeken (MDN Web Docs)
-Hieronder staat de definitie en betekenis van de belangrijkste HTML5-elementen in eigen woorden:
-
-- header: Vertegenwoordigt de introductie of navigatie-inhoud van een pagina of een specifiek sectie-element (bevat vaak logo's, titels of auteursgegevens).
-- nav: Een sectie van de pagina die speciaal bedoeld is voor navigatielinks, zoals hoofdmenu's, inhoudsopgaven of indexen.
-- main: Bevat de centrale, unieke inhoud van het document. Dit mag slechts één keer per pagina actief getoond worden en bevat geen herhalende elementen zoals sidebars of footers.
-- footer: De voettekst van een pagina of sectie, meestal gebruikt voor auteursrechtinformatie, contactgegevens, sitemaps of gerelateerde documenten.
-- article: Een zelfstandige, onafhankelijke compositie in een pagina die in principe herbruikbaar of apart distribueerbaar is (zoals een forum-post, krantenartikel of blogbericht).
-- aside: Vertegenwoordigt inhoud disruption zijdelings verband houdt met de inhoud eromheen, vaak vormgegeven als een zijbalk (sidebar) of inline advertentie.
-- a: Maakt een hyperlink aan naar andere webpagina's, bestanden, e-mailadressen of locaties binnen dezelfde pagina via het href-attribuut.
-- img: Wordt gebruikt om een afbeelding in te sluiten in de pagina, waarbij het src-attribuut naar het bestand verwijst en het alt-attribuut een tekstuele beschrijving biedt.
-
-## Controlelijst Bestanden (Oefening 5 & 6)
-Mijn labo-01 map op GitHub bevat exact de volgende vereiste HTML-pagina's en mappen:
-- index.html (Homepagina met algemene opzet, header, nav en footer)
-- over-mij.html (Pagina met persoonlijke info en geordende/ongeordende lijsten)
-- hobby.html (Pagina over een specifieke hobby inclusief een werkende afbeelding en externe link)
-- boodschappen.html (Pagina met een interactieve boodschappenlijst die linkt naar webshops)
-- img/ (Submap met uitsluitend kleine letters en zonder spaties in de bestandsnamen)
-
 # Labo 2 - Selectors, Cascade en de Eerste Nabouw
+Naam: Nouredine Tahrioui
 
 ## Oefening 2: Selectors lezen (Reflectie)
 Betekenis van de 5 selectors die onderaan stijl.css staan:
