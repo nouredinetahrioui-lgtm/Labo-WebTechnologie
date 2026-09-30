@@ -1,74 +1,78 @@
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    background-color: rgba(42, 44, 66, 0.479);
+}
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0d1117; /* GitHub-style dark background */
-            color: #c9d1d9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            padding: 20px;
-        }
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    border: 2px solid black;
+}
 
-        /* Container card */
-        .container {
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 30px;
-            width: 100%;
-            max-width: 450px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
+nav a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
 
-        h1 {
-            color: #f0f6fc;
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
+nav a:hover {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 13%;
+}
+/* Ordered LIST */
+ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(73, 65, 65)
+}
+/* List */
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(57, 89, 94)
+}
 
-        p {
-            color: #8b949e;
-            font-size: 1rem;
-            margin-bottom: 24px;
-        }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-        /* Nav List styled into distinct buttons */
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
+a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
 
-        li a {
-            display: block;
-            text-decoration: none;
-            color: #58a6ff;
-            background-color: #21262d;
-            border: 1px solid #30363d;
-            padding: 14px 20px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.2s ease-in-out;
-        }
+a:hover {
+    background-color: white;
+}
 
-        li a:hover {
-            background-color: #1f6feb;
-            color: #ffffff;
-            border-color: #388bfd;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(31, 111, 235, 0.2);
-        }
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        li a:active {
-            transform: translateY(0);
-        }
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,109 @@
+# Labo 1 - Je werkplek en je eerste pagina's
+**Naam:** Nouredine Tahrioui
+
+---
+
+## Oefening 4: Tags opzoeken (MDN Web Docs)
+*Hieronder staat de definitie en betekenis van de belangrijkste HTML5-elementen in eigen woorden:*
+
+* **`header`**
+  Vertegenwoordigt de introductie of navigatie-inhoud van een pagina of een specifiek sectie-element (bevat vaak logo's, titels of auteursgegevens).
+* **`nav`**
+  Een sectie van de pagina die speciaal bedoeld is voor navigatielinks, zoals hoofdmenu's, inhoudsopgaven of indexen.
+* **`main`**
+  Bevat de centrale, unieke inhoud van het document. Dit mag slechts één keer per pagina actief getoond worden en bevat geen herhalende elementen zoals sidebars of footers.
+* **`footer`**
+  De voettekst van een pagina of sectie, meestal gebruikt voor auteursrechtinformatie, contactgegevens, sitemaps of gerelateerde documenten.
+* **`article`**
+  Een zelfstandige, onafhankelijke compositie in een pagina die in principe herbruikbaar of apart distribueerbaar is (zoals een forum-post, krantenartikel of blogbericht).
+* **`aside`**
+  Vertegenwoordigt inhoud die zijdelings verband houdt met de inhoud eromheen, vaak vormgegeven als een zijbalk (sidebar) of inline advertentie/callout.
+* **`a`**
+  Maakt een hyperlink aan naar andere webpagina's, bestanden, e-mailadressen of locaties binnen dezelfde pagina via het `href`-attribuut.
+* **`img`**
+  Wordt gebruikt om een afbeelding in te sluiten in de pagina, waarbij het `src`-attribuut naar het bestand verwijst en het `alt`-attribuut een tekstuele beschrijving biedt.
+
+---
+
+## Controlelijst Bestanden (Oefening 5 & 6)
+Mijn `labo-01/` map op GitHub bevat exact de volgende vereiste HTML-pagina's en mappen:
+- [ ] `index.html` (Homepagina met algemene opzet, header, nav en footer)
+- [ ] `over-mij.html` (Pagina met persoonlijke info en geordende/ongeordende lijsten)
+- [ ] `hobby.html` (Pagina over een specifieke hobby inclusief een werkende afbeelding en externe link)
+- [ ] `boodschappen.html` (Pagina met een interactieve boodschappenlijst die linkt naar webshops)
+- [ ] `img/` (Submap met uitsluitend kleine letters en zonder spaties in de bestandsnamen)
+
+---------------------------------------------------------------------------
+# Labo 2 - Selectors, Cascade en de Eerste Nabouw
+
+
+---
+
+## Oefening 2: Selectors lezen (Reflectie)
+*Betekenis van de 5 selectors die onderaan `stijl.css` staan:*
+
+1. **`nav ul li a`**
+   Selecteert elke link (`a`) die zich bevindt binnen een list-item (`li`) van een ongenummerde lijst (`ul`) die binnen een navigatie-element (`nav`) staat.
+2. **`article > p`**
+   Selecteert elke paragraaf (`p`) die een **direct kind** (child) is van een `article`. Paragrafen die dieper genest zitten, worden niet geraakt.
+3. **`h1 + p`**
+   Selecteert de eerste paragraaf (`p`) die **onmiddellijk** volgt op een `h1`-kop op hetzelfde niveau (adjacent sibling).
+4. **`input[type="text"]`**
+   Selecteert elk invoerveld (`input`) dat specifiek het attribuut `type="text"` heeft.
+5. **`ul li:nth-child(odd)`**
+   Selecteert elk **oneven** list-item (`li`) (de 1e, 3e, 5e, etc.) binnen een ongenummerde lijst (`ul`).
+
+---
+
+## Oefening 3: Cascade Voorspellingen
+*Vul deze tabel in op basis van de 10 code-cases in je lokale bestanden vóórdat je de pagina in Live Server start. Vul na het bekijken in de browser de laatste twee kolommen aan.*
+
+| Vraag | Voorspelde Kleur | Welke trede beslist? (Herkomst / Specificiteit / Volgorde / Overerving) | Zat je fout? (Ja/Nee) + Wat was de reden? |
+| :--- | :--- | :--- | :--- |
+| **Vraag 1** | | | |
+| **Vraag 2** | | | |
+| **Vraag 3** | | | |
+| **Vraag 4** | | | |
+| **Vraag 5** | | | |
+| **Vraag 6** | | | |
+| **Vraag 7** | | | |
+| **Vraag 8** | | | |
+| **Vraag 9** | | | |
+| **Vraag 10** | | | |
+
+<!-- Vraag snap ik niet zo goed, moet worden gevraagd. -->
+
+**Reflectie Cascade:** Bij welke vraag zat je eventueel fout en wat was de reden? Wie alle tien juist had: welke vraag duurde het langst?
+> [Bij sommige vragen zat ik fout voornamelijk omdat ik er vanuit ging dat de class werkelijk bestond zonder het na te checken. Nadat ik dit had nagechecked zag ik uiteindelijk dat het niet bestond.]
+
+---
+
+## Oefening 4: De Nabouw (Reflectie)
+*Beantwoord deze vragen nadat je de CSS-nabouw hebt afgerond:*
+
+* **Welke selector koos je voor de links in de navigatie, en waarom geen class?**
+  > [Ik koos "a", voornamelijk omdat er in "a" links in worden gezet. Geen class omdat overbodig zijn in deze situatie. Als je een "a" hebt in een nav of in een andere class, kan je hem makkelijk terug vinden door zijn children op te zoeken.]
+* **Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?**
+  > [Dit was om de kleur te veranderen van de "praktisch" en "bonen", voornamelijk omdat ik de children terug moest vinden. Ik heb gebruik gemaakt van "nth-child" en heb alle "p"s geteld, en voor de laatste heb ik als selector "strong" gebruikt. Omdat dit toch maar het enigste child was van p binnenin "praktsich"]
+
+---
+
+## Oefening 6: Je Site (Reflectie)
+*Beantwoord deze vragen nadat je de stylesheet aan je persoonlijke site hebt gekoppeld:*
+
+* **Welke drie waarden staan er in je tokenblok op `:root` en waarom juist die?**
+  > [Vraag, wat men met deze vraag bedoelt.]
+* **Wat verandert er in je site als je één token (variabele) wijzigt?**
+  > [dan zal elke die ermee in overeenstemming komt gewijzigd worden.]
+
+---
+
+## Thuisopdracht: AI Code Review (Minstens 5 bevindingen)
+*Beoordeel de door AI gegenereerde CSS-code voor de nabouw aan de hand van hoofdstuk 2 uit de syllabus (zoek naar pixel-soep, overspecifieke selectors, `!important`, letterlijke waarden i.p.v. tokens, geneste spelling, etc.):*
+<!-- Vraag erom ^ -->
+1. **Bevinding 1:** [Typ hier je observatie + eventueel foutnummer/sectie]
+2. **Bevinding 2:** [Typ hier je observatie + eventueel foutnummer/sectie]
+3. **Bevinding 3:** [Typ hier je observatie + eventueel foutnummer/sectie]
+4. **Bevinding 4:** [Typ hier je observatie + eventueel foutnummer/sectie]
+5. **Bevinding 5:** [Typ hier je observatie + eventueel foutnummer/sectie]
+---------------------------------------------------------------------------
