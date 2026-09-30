@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(250, 239, 230);
+}
+
+header > h1 {
+    color: rgb(255, 136, 0);
+}
+
+header > p {
+    color: rgb(139, 132, 124);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+}
+
+article p:nth-child(2) {
+    font-size: 1.2rem;
+}
+
+article h3 {
+    color: grey;
+}
+
+.kaart li:nth-child(odd) {
+    background-color: rgba(138, 72, 10, 0.253);
+}
+
+.prijs {
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#bonen {
+    font-style: italic;
+}
+
+#praktisch {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+    text-align: center;   
+    color: grey;
+}
+
+footer a {
+    color: grey;
+}
+
+main p:nth-of-type(3) a {
+    color: rgb(255, 136, 0);
+}
+
+main p:nth-of-type(5) strong {
+    color: rgb(255, 136, 0);
+}

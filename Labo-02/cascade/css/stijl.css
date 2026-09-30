@@ -1,0 +1,117 @@
+/* stijl.css - oefening 3: voorspel, dan kijk. Wijzig dit bestand niet. */
+
+/* Opmaak van de pagina zelf; doet niet mee in de vragen. */
+body {
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.vraag {
+  border: 1px solid #8a8a89;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ---- vraag 1 ---- */
+a {
+  color: green;
+}
+
+/* Alle a elementen krijgen een tekstkleur groen.  */
+
+/* ---- vraag 2 ---- */
+.v2-tekst {
+  color: red;
+}
+
+/* Tekstkleur rood */
+
+.v2-tekst {
+  color: blue;
+}
+
+/* Tekstkleur blauw */
+
+/* ---- vraag 3 ---- */
+.opvallend {
+  color: red;
+}
+
+/* Class opvallend tekstkleur rood */
+
+em {
+  color: blue;
+}
+/* EM sleector tekstkleur blauw */
+
+/* ---- vraag 4 ---- */
+.v4 > a {
+  color: green;
+}
+
+/* alle a elementen opeenvolgend met vraag 4 krijgen een tekstkleur groen */
+.v4 a {
+  color: red;
+}
+
+/* tekstkleur rood voor de a elementen die in V4 zitten */
+
+/* ---- vraag 5 ---- */
+.een.twee.drie {
+  color: red;
+}
+/* Niks, bestaat niet. */
+
+#v5-tekst {
+  color: blue;
+}
+
+/* ID v5-tekst, krijgt een tekstkleur blauw */
+
+/* ---- vraag 6 ---- */
+.v6 {
+  color: red;
+}
+
+/* class bestaat niet dus zal niks uitvoeren. */
+
+.v6-tekst {
+  color: blue;
+}
+/* zal vraag 6 tekstkleur blauw geven. */
+
+/* ---- vraag 7 ---- */
+.v7 {
+  color: red;
+}
+
+/* class bestaat niet dus niks */
+
+/* ---- vraag 8 ---- */
+.v8-tekst {
+  color: red;
+}
+
+/* Zal V8 color-RGB ROOD geven */
+
+/* ---- vraag 9 ---- */
+h3 {
+  color: red !important;
+}
+
+/* Alle H3 elementen  */
+
+.v9-tekst {
+  color: blue;
+}
+
+/* zal de vraag 6, een kleur blauw geven */
+
+/* ---- vraag 10 ---- */
+.v10-tekst {
+  color: green;
+  font-size: 1.5rem;
+  color: blue;
+}
+
+/* vraag 10 tekstkleur groen, font grootte 1.5rem, en dan opnieuw kleur blauw, dus de vaste kleur zal blauw zijn. */
