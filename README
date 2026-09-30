@@ -36,7 +36,7 @@ Betekenis van de 5 selectors die onderaan stijl.css staan:
 Vul deze tabel in op basis van de 10 code-cases in je lokale bestanden vóórdat je de pagina in Live Server start. Vul na het bekijken in de browser de laatste twee kolommen aan.
 
 | Vraag | Voorspelde Kleur | Welke trede beslist? | Zat je fout? + Wat was de reden? |
-| :--- | :--- | :--- | :--- |
+-------------------------------------------------------------------------------------------------
 | Vraag 1 | | | |
 | Vraag 2 | | | |
 | Vraag 3 | | | |
@@ -47,6 +47,7 @@ Vul deze tabel in op basis van de 10 code-cases in je lokale bestanden vóórdat
 | Vraag 8 | | | |
 | Vraag 9 | | | |
 | Vraag 10 | | | |
+-------------------------------------------------------------------------------------------------
 
 Reflectie Cascade: Bij sommige vragen zat ik fout voornamelijk omdat ik er vanuit ging dat de class werkelijk bestond zonder het na te checken. Nadat ik dit had nagechecked zag ik uiteindelijk dat het niet bestond.
 
@@ -70,9 +71,9 @@ Beantwoord deze vragen nadat je de stylesheet aan je persoonlijke site hebt geko
 
 ## Thuisopdracht: AI Code Review (Minstens 5 bevindingen)
 Beoordeel de door AI gegenereerde CSS-code voor de nabouw aan de hand van hoofdstuk 2 uit de syllabus (zoek naar pixel-soep, overspecifieke selectors, !important, letterlijke waarden i.p.v. tokens, geneste spelling, etc.):
-
-1. Bevinding 1: Pixel-soep gedetecteerd. De AI gebruikt vaste px-waarden voor lettergrootte en marges in plaats van de verplichte relatieve rem-maten uit de ontwerprichtlijnen (Sectie 2.8).
-2. Bevinding 2: Gebruik van !important gedetecteerd. De AI dwingt hiermee prioriteit af om css-botsingen op te lossen in plaats van de natuurlijke cascade- en specificiteitsregels correct toe te passen (Sectie 2.7).
-3. Bevinding 3: Overspecifieke selectors gebruikt. De AI schrijft selectors zoals "body main div.content article p" in plaats van kortere, efficiënte structurele selectors zoals "article p" (Sectie 2.5).
-4. Bevinding 4: Hardcoded kleurwaarden toegepast. De AI gebruikt letterlijke hex-kleuren zoals #b5451b direct in de regels in plaats van de gedefinieerde variabelen uit het root tokenblok aan te roepen via var() (Sectie 2.9).
-5. Bevinding 5: Foutieve nesting-syntax gebruikt. De AI probeert elementen binnen elkaar te nesten zoals in SASS/SCSS, wat native CSS-fouten oplevert als de browser de nesting-specificatie nog niet volledig ondersteunt of verkeerd interpreteert (Sectie 2.4).
+1. Bevinding 1: Pixel-soep gedetecteerd. De AI gebruikt vaste px-waarden voor lettergrootte en marges in plaats van de verplichte relatieve rem-maten uit de ontwerprichtlijnen (2.8,
+F2.9).
+2. Bevinding 2: Gebruik van !important gedetecteerd. De AI dwingt hiermee prioriteit af om css-botsingen op te lossen in plaats van de natuurlijke cascade en specificiteitsregels correct toe te passen (F2.6).
+3. Bevinding 3: Overspecifieke selectors gebruikt. De AI schrijft selectors zoals "body main div.content article p" in plaats van kortere, efficiënte structurele selectors zoals "article p" (Sectie F2.7).
+4. Bevinding 4: Hardcoded kleurwaarden toegepast. De AI gebruikt letterlijke hex-kleuren zoals #b5451b direct in de regels in plaats van de gedefinieerde variabelen uit het root tokenblok aan te roepen via var() (F2.10).
+5. Bevinding 5: Foutieve nesting-syntax gebruikt. De AI probeert elementen binnen elkaar te nesten zoals in SASS/SCSS, wat native CSS-fouten oplevert als de browser de nesting-specificatie nog niet volledig ondersteunt of verkeerd interpreteert (F1.10).
