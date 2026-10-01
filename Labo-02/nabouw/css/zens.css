@@ -1,3 +1,11 @@
+:root {
+  --accent-kleur: red;    
+  --accent-gedempt: grey;  
+  --inkt-kleur: black;   
+  --papier-kleur: white;    
+}
+
+
 body {
     background-color: rgb(250, 239, 230);
 }
@@ -14,6 +22,36 @@ nav a {
     text-decoration: none;
     color: rgb(255, 136, 0);
     font-weight: bold;
+    accent-color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+nav a:focus {
+    text-decoration: underline;
+    color: black;
+}
+
+main a {
+  color: var(--accent-kleur);
+  text-decoration: underline;
+  transition: background-color 0.2s ease, color 0.2s ease; 
+  /* transtion die zorgt voor smoothere overgang omda die ervoor wat raar uitzag. */
+}
+
+main a:hover, main a:focus {
+  color: var(--papier-kleur);
+  background-color: var(--accent-kleur);
+  text-decoration: none; 
+  outline: none;        
+}
+
+nav a:focus {
+    text-decoration: underline;
+    color:black;
 }
 
 article p:nth-child(2) {
@@ -50,14 +88,23 @@ footer {
     color: grey;
 }
 
-footer a {
-    color: grey;
-}
-
 main p:nth-of-type(3) a {
     color: rgb(255, 136, 0);
 }
 
+
 main p:nth-of-type(5) strong {
     color: rgb(255, 136, 0);
+}
+
+
+footer a {
+  color: var(--accent-gedempt);
+  text-decoration: none;      
+  transition: color 0.2s ease;
+}
+
+footer a:hover, footer a:focus {
+  color: var(--accent-kleur);
+  text-decoration: underline;  
 }
