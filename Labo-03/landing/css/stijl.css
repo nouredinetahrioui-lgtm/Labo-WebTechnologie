@@ -2,7 +2,103 @@
 
 /* === tokens === */
 :root {
-
+    --banner: #c8b8ff;
+    --link: #5551ff;
+    --hero: #779cee;
 }
 
 /* === your rules === */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: var(--hero);
+    display: flex;
+    width: 100%;
+    height: 50rem;
+    padding: 6rem;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+/*     border: 1px solid black;
+ */    width: 35rem;
+ margin-bottom: 24rem;
+}
+.banner {
+    text-align: center;
+    background-color: var(--banner);
+    padding: 1rem;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin-left: 1rem;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+
+article h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.bovenkop {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+
+}
+
+.knop {
+    margin-top: 3rem;
+
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+article p {
+    margin-top: 1rem;
+    font-weight: bold;
+/*     border: 1px solid black;
+ */    width: 27rem;
+}
+
+img {
+    height: 30rem;
+    margin-left: 20rem;
+}
+
