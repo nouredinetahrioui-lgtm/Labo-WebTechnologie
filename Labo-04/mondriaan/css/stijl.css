@@ -1,0 +1,62 @@
+/* stijl.css - labo 4, mondriaan (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --blauw: #2554ab;
+    --lila: #a090af;
+    --bruin: #a16122;
+    --geel: #e7c948;
+    --marine: #13234e;
+    --olijf: #ae9310;
+    --rood: #cd2424;
+
+
+
+
+    /* De ontwerper gaf je mee: blauw #2554ab ; de vlakken #a090af (lila), #a16122 (bruin),
+#e7c948 (geel), #13234e (marine), #ae9310 (olijf) en #cd2424 (rood), elk met de class van
+hun kleur; het schilderij is 70vh breed en hoog en staat horizontaal gecentreerd met 15vh
+boven en onder; de lijnen zijn 2vh dik, ook aan de buitenrand.
+Tip: twee assen, dus grid (4.5): repeat(4, 1fr) voor de kolommen e */
+
+}
+
+/* === your rules === */
+
+
+.lila {
+    background-color: var(--lila);
+    grid-column: 1/4;
+}
+
+.bruin {
+    background-color: var(--bruin);
+}
+
+.geel {
+    background-color: var(--geel);
+}
+
+.marine {
+    background-color: var(--marine);
+    grid-column: -1/4;
+}
+
+.olijf {
+    background-color: var(--olijf);
+    grid-column: 1/4;
+}
+.rood {
+    background-color: var(--rood);
+}
+
+main {
+    height: 70vh;
+    width: 70vh;
+    background-color: var(--blauw);
+    margin: 15vh auto;
+    padding: 2vh;
+    display: grid;
+    gap: 2vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
