@@ -2,7 +2,67 @@
 
 /* === tokens === */
 :root {
-
+    --Albert-Einstein: #1e5bd8;
+    --Tim-Berners-Lee: #e88bb4;
+    --Frank-Lloyd-Wright: #c51f2a;
+    --Christian-Lous-Lange: #d98c1a;
+    --Bill-Gates: #3b7a2a;
+    --Stewart-Brand: #8fb89a;
+    --Arthur-C-Clarke: #7b4fa3;
+    --BF-Skinner: #6b6b6b;
 }
 
 /* === your rules === */
+
+body {
+    font-family: Verdana;
+}
+
+cite {
+    display: block;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+main blockquote {
+    padding: 1rem;
+    margin: 1rem;
+    border-left: 0.5rem solid var(--Albert-Einstein);
+}
+
+main blockquote:nth-child(1) {
+    border-left: 0.5rem solid var(--Albert-Einstein);
+}
+
+main blockquote:nth-child(2) {
+    border-left: 0.5rem solid var(--Tim-Berners-Lee);
+}
+
+main blockquote:nth-child(3) {
+    border-left: 0.5rem solid var(--Frank-Lloyd-Wright);
+}
+
+main blockquote:nth-child(4) {
+    border-left: 0.5rem solid var(--Christian-Lous-Lange);
+}
+
+main blockquote:nth-child(5) {
+    border-left: 0.5rem solid var(--Bill-Gates);
+}
+
+main blockquote:nth-child(6) {
+    border-left: 0.5rem solid var(--Stewart-Brand);
+}
+
+main blockquote:nth-child(7) {
+    border-left: 0.5rem solid var(--Arthur-C-Clarke);
+}
+
+main blockquote:nth-child(8) {
+    border-left: 0.5rem solid var(--BF-Skinner);
+}

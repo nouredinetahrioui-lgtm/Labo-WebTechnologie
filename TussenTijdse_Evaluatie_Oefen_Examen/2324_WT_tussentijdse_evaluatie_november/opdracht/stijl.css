@@ -1,0 +1,426 @@
+
+/* ==============================
+   BASISINSTELLINGEN
+================================= */
+
+:root {
+    font-size: 100%;
+
+    --oranje: #f87f4b;
+    --roze: #fab8d3;
+    --groen: #37bb95;
+    --geel: #f0eb70;
+    --paars: #9270c4;
+    --black: black;
+    --grijs: #f5f5f5;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* ==============================
+   HEADER - MOBIEL
+================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Hamburgericoon */
+
+header h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 30px;
+    height: 20px;
+    margin: 0;
+
+    cursor: pointer;
+}
+
+header h3 span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* Navigatie */
+
+header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--grijs);
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    margin-bottom: 0.5rem;
+}
+
+header nav a {
+    color: var(--paars);
+    text-decoration: underline;
+}
+
+header nav a.geselecteerd {
+    background-color: var(--paars);
+    color: white;
+}
+
+/* ==============================
+   MAIN EN ARTIKELEN
+================================= */
+
+main {
+    min-width: 0;
+}
+
+main article {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    row-gap: 1rem;
+
+    margin-bottom: 2.5rem;
+    min-width: 0;
+}
+
+/* Titels en datum */
+
+main article h2,
+main article h4 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    padding: 0.75rem 0;
+    margin: 0;
+}
+
+main article h2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+main article h2 a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main article h4 {
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-align: right;
+    line-height: 1.3;
+    padding-left: 1rem;
+}
+
+/* Paragrafen */
+
+main article > p {
+    grid-column: 1 / -1;
+    line-height: 1.5;
+    margin: 0;
+}
+
+main article > p a {
+    color: var(--groen);
+}
+
+/* Figuren volledige breedte */
+
+main article > .figuur {
+    grid-column: 1 / -1;
+    min-width: 0;
+}
+
+/* ==============================
+   FIGUUR 1 - CSS GRID
+================================= */
+
+.figuur_1 {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+
+    width: 100%;
+    height: 20rem;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    border: 1px solid black;
+}
+
+.figuur_1 li:nth-child(1) {
+    background-color: var(--oranje);
+}
+
+.figuur_1 li:nth-child(2) {
+    background-color: var(--roze);
+}
+
+.figuur_1 li:nth-child(3) {
+    background-color: var(--geel);
+}
+
+.figuur_1 li:nth-child(4) {
+    background-color: var(--paars);
+}
+
+/* Vijfde element verbergen voor
+   de vier vlakken uit de screenshot */
+
+.figuur_1 li:nth-child(5) {
+    display: none;
+}
+
+/* ==============================
+   FIGUUR 2 - MOBILE FIRST
+================================= */
+
+.figuur_2 {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+
+    width: 100%;
+    height: 20rem;
+
+    padding: 8px;
+
+    background-image: url("afbeelding.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border: 1px solid black;
+}
+
+/* Oranje vierkant */
+
+.figuur_2 p:first-of-type {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: var(--oranje);
+    margin: 0;
+}
+
+/* Roze vierkant */
+
+.figuur_2 p:last-of-type {
+    grid-column: 2;
+    grid-row: 1;
+
+    justify-self: end;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: var(--roze);
+    margin: 0;
+}
+
+/* Tekst linksonder */
+
+.figuur_2 h3 {
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+    justify-self: start;
+
+    background-color: white;
+    color: var(--paars);
+
+    font-size: 0.75rem;
+    font-weight: bold;
+
+    padding: 3px 5px;
+    margin: 0;
+}
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    padding: 1rem 0;
+    border-top: 1px solid black;
+    font-size: 0.8rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ==============================
+   MEDIA QUERY - VANAF 900PX
+================================= */
+
+
+
+@media (min-width: 900px) {
+
+    /* HEADER LINKS - MAIN RECHTS */
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 2rem;
+        align-items: start;
+    }
+
+    /* DESKTOP NAVIGATIE */
+
+    header {
+        display: block;
+        position: static;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    header h3 {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+        position: static;
+        width: 100%;
+        background: transparent;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    header nav li {
+        margin: 0;
+    }
+
+    /* ARTIKELEN RECHTS */
+
+    main {
+        min-width: 0;
+    }
+
+    main article {
+        grid-template-columns: minmax(0, 1fr) auto;
+        row-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* GEKLEURDE GRID */
+
+    .figuur_1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows: 1fr 1fr;
+
+        width: 100%;
+        height: 20rem;
+
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+        border: 1px solid black;
+    }
+
+    /* Oranje - linksboven */
+    .figuur_1 li:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    /* Roze - middenboven */
+    .figuur_1 li:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    /* Groen - rechtsboven */
+    .figuur_1 li:nth-child(3) {
+        display: block;
+        grid-column: 3;
+        grid-row: 1;
+        background-color: var(--groen);
+
+    }
+
+    /* Geel - linksonder, over twee kolommen */
+    .figuur_1 li:nth-child(4) {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        background-color: var(--geel);
+    }
+
+    /* Paars - rechtsonder */
+    .figuur_1 li:nth-child(5) {
+        background-color: var(--paars);
+        display: block;
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    /* TWEEDE AFBEELDING */
+
+    .figuur_2 {
+        height: 20rem;
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    footer {
+        grid-column: 1 / -1;
+    }
+}

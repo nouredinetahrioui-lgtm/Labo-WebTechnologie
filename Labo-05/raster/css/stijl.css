@@ -2,7 +2,69 @@
 
 /* === tokens === */
 :root {
-
+    --AColor: #e9493f;
+    --BColor: #edd24a;
+    --CColor: #072f55;
+    --DColor: #52a51a;
+    --EColor: #efaad9;
+    --FColor: #a5f129;
+    --GColor: #ebc47a;
+    --HColor: #e8882c;
 }
 
 /* === your rules === */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main div {
+    border: 1px solid black;
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main div:nth-child(1) {
+    background-color: var(--AColor);
+    grid-column: 1 / 4;
+}
+
+main div:nth-child(2) {
+    background-color: var(--BColor);
+}
+
+main div:nth-child(3) {
+    background-color: var(--CColor);
+}
+
+main div:nth-child(4) {
+    background-color: var(--DColor);
+}
+
+main div:nth-child(5) {
+    background-color: var(--EColor);
+}
+
+main div:nth-child(6) {
+    background-color: var(--FColor);
+}
+
+main div:nth-child(7) {
+    background-color: var(--GColor);
+    grid-column: 1 / 4;
+}
+
+main div:nth-child(8) {
+    background-color: var(--HColor);
+}
+
